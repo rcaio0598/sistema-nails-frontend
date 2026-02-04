@@ -1,44 +1,80 @@
 # 💅 Sistema Nails Frontend
 
-Sistema de agendamento online desenvolvido para **Nails Designers**, com foco em simplicidade, usabilidade e automação do atendimento via WhatsApp.
+Sistema de agendamento frontend para Nails Designers, desenvolvido com foco em **clareza de código**, **experiência do usuário** e **simulação de um produto real**.
 
 ---
 
-## 📖 Sobre o projeto
+## 🚩 Problema real
 
-O **Sistema Nails Frontend** é uma aplicação frontend desenvolvida com tecnologias web básicas, que permite o agendamento de serviços de manicure de forma prática e intuitiva.
+Profissionais autônomos da área da beleza frequentemente realizam agendamentos manualmente (mensagens soltas, anotações, redes sociais), o que gera:
+- erros de horário  
+- retrabalho  
+- falta de organização  
+- perda de clientes  
 
-O objetivo principal do projeto é **automatizar o processo de agendamento**, reduzir erros manuais e facilitar a comunicação entre cliente e profissional, utilizando integração direta com o WhatsApp.
+Este projeto simula uma solução simples e acessível para esse cenário.
 
 ---
 
-## 🎯 Objetivos do projeto
+## 💡 Solução proposta
 
-- Praticar os fundamentos do desenvolvimento frontend  
-- Aplicar lógica de programação com JavaScript  
-- Manipular dados no navegador usando LocalStorage  
-- Criar uma interface simples, funcional e responsiva  
-- Simular um sistema real utilizado no dia a dia profissional  
+O **Sistema Nails Frontend** permite que o cliente:
+- escolha o serviço  
+- visualize o valor automaticamente  
+- finalize o agendamento via WhatsApp  
+
+Tudo isso em uma aplicação leve, direta e executada inteiramente no navegador.
+
+---
+
+## 🧠 Visão de produto
+
+Este projeto não é apenas um exercício técnico. Ele foi pensado como um **MVP (Produto Mínimo Viável)**, com funcionalidades essenciais que resolvem um problema real sem complexidade desnecessária.
+
+---
+
+## 🎯 Objetivos técnicos e educacionais
+
+- Consolidar os fundamentos do frontend  
+- Desenvolver lógica de programação com JavaScript puro  
+- Trabalhar com eventos e manipulação do DOM  
+- Implementar persistência de dados sem backend  
+- Organizar código de forma clara e escalável  
 
 ---
 
 ## ⚙️ Funcionalidades
 
-✅ Agendamento de serviços  
-✅ Seleção automática de valores conforme o serviço escolhido  
-✅ Integração direta com WhatsApp para envio do agendamento  
-✅ Salvamento do histórico de agendamentos no LocalStorage  
-✅ Interface simples e intuitiva  
-✅ Organização do código em HTML, CSS e JavaScript  
+✔ Agendamento de serviços  
+✔ Cálculo automático de valores  
+✔ Geração dinâmica de mensagem para WhatsApp  
+✔ Persistência de histórico com LocalStorage  
+✔ Interface simples e objetiva  
 
 ---
 
-## 🖥️ Tecnologias utilizadas
+## 🧩 Decisões técnicas (Insights)
 
-- **HTML5** — Estrutura da aplicação  
+### JavaScript puro (Vanilla JS)
+Optou-se por JavaScript puro para garantir domínio real da linguagem, evitando abstrações de frameworks que mascaram a lógica básica.
+
+### LocalStorage como persistência
+A utilização do LocalStorage permite simular armazenamento de dados sem backend, sendo ideal para MVPs, protótipos e projetos educacionais.
+
+### Arquitetura simples e funcional
+A separação entre `HTML`, `CSS` e `JavaScript` reforça boas práticas e facilita a manutenção e leitura do código.
+
+### WhatsApp como canal de integração
+A escolha do WhatsApp reduz fricção no agendamento e reflete um comportamento real do público-alvo.
+
+---
+
+## 🛠️ Tecnologias utilizadas
+
+- **HTML5** — Estrutura semântica  
 - **CSS3** — Estilização e layout  
-- **JavaScript (Vanilla JS)** — Lógica e interatividade  
-- **Bootstrap** — Estilização rápida e responsividade  
+- **JavaScript (Vanilla)** — Lógica e interação  
+- **Bootstrap** — Responsividade e padronização visual  
 
 ---
 
