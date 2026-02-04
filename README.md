@@ -80,3 +80,12 @@ A escolha do WhatsApp reduz fricção no agendamento e reflete um comportamento 
 
 ## 📂 Estrutura do projeto
 
+---
+
+sistema-nails-frontend/
+│
+├── index.html
+├── style.css
+├── script.js
+├── README.md
+└── LICENSE
