@@ -1,99 +1,174 @@
-# 💅 Sistema Nails Frontend
+# 💅 Sistema de Agendamento Nails
 
-Sistema de agendamento frontend para Nails Designers, desenvolvido com foco em **clareza de código**, **experiência do usuário** e **simulação de um produto real**.
+> Aplicação frontend de agendamento de serviços desenvolvida como atividade do **Bootcamp Java - Deloitte**, aplicada a um caso real de uma Nails Designer.
 
----
-
-## 🌐 Demonstração online
-
-Acesse o projeto em:  
-🔗 https://rcaio0598.github.io/sistema-nails-frontend/
+[![Demo](https://img.shields.io/badge/Demo-Online-success)](https://rcaio0598.github.io/sistema-nails-frontend/)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 
 ---
 
-## 🚩 Problema real
+## 🎯 Sobre o Projeto
 
-Profissionais autônomos da área da beleza frequentemente realizam agendamentos de forma manual (mensagens soltas, anotações ou redes sociais), o que gera:
+Durante o Bootcamp Java da Deloitte, recebi como atividade criar uma aplicação web. Aproveitei para desenvolver uma solução real para uma **Nails Designer** que já havia me pedido ajuda com organização de agendamentos.
 
-- erros de horário  
-- retrabalho  
-- falta de organização  
-- perda de clientes  
-
-Este projeto simula uma solução simples e acessível para esse cenário.
+Este projeto representa a **camada frontend** do sistema, focando em usabilidade, responsividade e integração com WhatsApp — o principal canal de comunicação do público-alvo.
 
 ---
 
-## 💡 Solução proposta
+## 🚩 Contexto & Problema
 
-O **Sistema Nails Frontend** permite que o cliente:
+Uma Nails Designer conhecida enfrentava:
+- ❌ Desorganização em agendamentos (mensagens perdidas, anotações dispersas)
+- ❌ Conflitos de horário frequentes
+- ❌ Dificuldade em calcular valores com múltiplos serviços
+- ❌ Retrabalho ao confirmar manualmente cada cliente
 
-- escolha o serviço  
-- visualize o valor automaticamente  
-- finalize o agendamento via WhatsApp  
-
-Tudo isso em uma aplicação leve, direta e executada inteiramente no navegador.
-
----
-
-## 🧠 Visão de produto
-
-Este projeto não é apenas um exercício técnico. Ele foi pensado como um **MVP (Produto Mínimo Viável)**, com funcionalidades essenciais que resolvem um problema real sem complexidade desnecessária.
+**A oportunidade:** Unir uma atividade do bootcamp com uma necessidade real.
 
 ---
 
-## 🎯 Objetivos técnicos e educacionais
+## ✨ Funcionalidades
 
-- Consolidar os fundamentos do desenvolvimento frontend  
-- Desenvolver lógica de programação com JavaScript puro  
-- Trabalhar com eventos e manipulação do DOM  
-- Implementar persistência de dados sem backend  
-- Organizar código de forma clara e escalável  
-
----
-
-## ⚙️ Funcionalidades
-
-✔ Agendamento de serviços  
-✔ Cálculo automático de valores  
-✔ Geração dinâmica de mensagem para WhatsApp  
-✔ Persistência de histórico com LocalStorage  
-✔ Interface simples e objetiva  
+- ✅ Seleção de serviços com cálculo automático de valores
+- ✅ Escolha de data e horário para agendamento
+- ✅ Geração de mensagem pré-formatada para WhatsApp
+- ✅ Histórico de agendamentos com LocalStorage
+- ✅ Interface responsiva (mobile-first)
 
 ---
 
-## 🧩 Decisões técnicas (Insights)
+## 🚀 Como Executar
 
-### JavaScript puro (Vanilla JS)
-Optou-se por JavaScript puro para garantir domínio real da linguagem, evitando abstrações de frameworks que mascaram a lógica básica.
+### 🌐 Acessar Online
+**Demo ao vivo:** https://rcaio0598.github.io/sistema-nails-frontend/
 
-### LocalStorage como persistência
-A utilização do LocalStorage permite simular armazenamento de dados sem backend, sendo ideal para MVPs, protótipos e projetos educacionais.
+### 💻 Rodar Localmente
 
-### Arquitetura simples e funcional
-A separação entre `HTML`, `CSS` e `JavaScript` reforça boas práticas e facilita a manutenção e leitura do código.
+**1. Clone o repositório:**
+```bash
+git clone https://github.com/rcaio0598/sistema-nails-frontend.git
+cd sistema-nails-frontend
+```
 
-### WhatsApp como canal de integração
-A escolha do WhatsApp reduz fricção no agendamento e reflete um comportamento real do público-alvo.
+**2. Abra no navegador:**
+
+**Opção A** - Direto:
+```
+Abra o arquivo index.html no navegador
+```
+
+**Opção B** - Com servidor local:
+```bash
+# Python 3
+python -m http.server 8000
+
+# Node.js
+npx http-server
+```
+
+**3. Acesse:**
+```
+http://localhost:8000
+```
 
 ---
 
-## 🛠️ Tecnologias utilizadas
+## 🛠️ Tecnologias Utilizadas
 
-- **HTML5** — Estrutura semântica  
-- **CSS3** — Estilização e layout  
-- **JavaScript (Vanilla)** — Lógica e interação  
-- **Bootstrap** — Responsividade e padronização visual  
+| Tecnologia | Finalidade |
+|------------|------------|
+| HTML5 | Estrutura semântica |
+| CSS3 | Estilização e layout |
+| JavaScript (Vanilla) | Lógica e interações |
+| Bootstrap 5 | Responsividade e componentes |
+| LocalStorage | Persistência local de dados |
 
 ---
 
-## 📂 Estrutura do projeto
-
-```text
+## 📂 Estrutura do Projeto
+```
 sistema-nails-frontend/
-│
-├── index.html     # Interface principal da aplicação
-├── style.css      # Estilos da aplicação
-├── script.js      # Lógica e regras de negócio
-├── README.md      # Documentação do projeto
-└── LICENSE        # Licença do projeto
+├── index.html          # Interface principal
+├── style.css           # Estilos customizados
+├── script.js           # Lógica da aplicação
+├── README.md           # Documentação
+├── LICENSE             # Licença MIT
+└── .gitignore          # Arquivos ignorados
+```
+
+---
+
+## 💡 Decisões Técnicas
+
+### JavaScript Vanilla
+Optei por JavaScript puro para consolidar os fundamentos da linguagem, sem depender de frameworks ou bibliotecas externas.
+
+### LocalStorage para persistência
+Permite armazenar histórico de agendamentos no navegador, criando uma experiência funcional sem necessidade de backend.
+
+### Integração via WhatsApp
+O público-alvo já usa WhatsApp diariamente. Aproveitar esse canal reduz fricção e facilita a adoção.
+
+### Mobile-first
+A maioria dos agendamentos acontece via celular. O design foi pensado primeiro para telas pequenas.
+
+---
+
+## 🎓 O Que Aprendi
+
+### Técnico
+- ✅ Manipulação do DOM com JavaScript
+- ✅ Gestão de eventos e validações
+- ✅ Uso da API LocalStorage
+- ✅ Design responsivo com Bootstrap
+- ✅ Deploy com GitHub Pages
+
+### Produto & Soft Skills
+- ✅ Transformar requisitos reais em funcionalidades
+- ✅ Priorizar features essenciais (MVP)
+- ✅ Pensar na experiência do usuário final
+- ✅ Documentar código e projeto
+
+---
+
+## 🔄 Possíveis Melhorias Futuras
+
+- [ ] Validações de formulário mais robustas
+- [ ] Sistema de lembretes/notificações
+- [ ] Backend com API REST (Java/Spring Boot)
+- [ ] Autenticação de usuários
+- [ ] Painel administrativo para gestão
+
+---
+
+## 📝 Licença
+
+Projeto disponibilizado sob licença MIT. Consulte [LICENSE](LICENSE) para mais informações.
+
+---
+
+## 👤 Autor
+
+**Caio Ruan Oliveira Nascimento**
+
+- 🎓 Graduado em Ciência da Computação | Pós-graduando em Cibersecurity
+- 💼 Participante do Bootcamp Java - Deloitte
+- 🔗 GitHub: [@rcaio0598](https://github.com/rcaio0598)
+- 💼 LinkedIn: [Caio Nascimento](https://www.linkedin.com/in/caionascimentoo/)
+
+---
+
+**Desenvolvido como atividade prática do Bootcamp Java - Deloitte, aplicado a um caso real**
+```
+
+---
+
+## ✅ ESSE README:
+
+- ✅ É honesto (atividade do bootcamp)
+- ✅ Mostra iniciativa (aproveitou pra fazer algo útil)
+- ✅ Destaca aprendizado
+- ✅ Não exagera nos "resultados"
+- ✅ Mantém profissionalismo
+
+---
