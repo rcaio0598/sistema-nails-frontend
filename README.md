@@ -4,9 +4,17 @@ Sistema de agendamento frontend para Nails Designers, desenvolvido com foco em *
 
 ---
 
+## 🌐 Demonstração online
+
+Acesse o projeto em:  
+🔗 https://rcaio0598.github.io/sistema-nails-frontend/
+
+---
+
 ## 🚩 Problema real
 
-Profissionais autônomos da área da beleza frequentemente realizam agendamentos manualmente (mensagens soltas, anotações, redes sociais), o que gera:
+Profissionais autônomos da área da beleza frequentemente realizam agendamentos de forma manual (mensagens soltas, anotações ou redes sociais), o que gera:
+
 - erros de horário  
 - retrabalho  
 - falta de organização  
@@ -19,6 +27,7 @@ Este projeto simula uma solução simples e acessível para esse cenário.
 ## 💡 Solução proposta
 
 O **Sistema Nails Frontend** permite que o cliente:
+
 - escolha o serviço  
 - visualize o valor automaticamente  
 - finalize o agendamento via WhatsApp  
@@ -35,7 +44,7 @@ Este projeto não é apenas um exercício técnico. Ele foi pensado como um **MV
 
 ## 🎯 Objetivos técnicos e educacionais
 
-- Consolidar os fundamentos do frontend  
+- Consolidar os fundamentos do desenvolvimento frontend  
 - Desenvolver lógica de programação com JavaScript puro  
 - Trabalhar com eventos e manipulação do DOM  
 - Implementar persistência de dados sem backend  
@@ -80,12 +89,11 @@ A escolha do WhatsApp reduz fricção no agendamento e reflete um comportamento 
 
 ## 📂 Estrutura do projeto
 
----
-
+```text
 sistema-nails-frontend/
 │
-├── index.html
-├── style.css
-├── script.js
-├── README.md
-└── LICENSE
+├── index.html     # Interface principal da aplicação
+├── style.css      # Estilos da aplicação
+├── script.js      # Lógica e regras de negócio
+├── README.md      # Documentação do projeto
+└── LICENSE        # Licença do projeto
